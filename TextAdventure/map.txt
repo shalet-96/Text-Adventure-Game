@@ -1,0 +1,5 @@
+|||LeaveMansion|
+||EmptyDarkPath|GiantSpiderRoom|
+||EmptyDarkPath||
+||BatsRoom||
+ZombieRoom|EmptyDarkPath|StartingRoom|EmptyDarkPath|MonsterRoom

@@ -1,0 +1,5 @@
+|||LeaveSnowLand|
+||EmptySnowPath|PenguinsRoom|
+||EmptySnowPath||
+||RatHumanoidRoom||
+CrawlerRoom|EmptySnowPath|StartingFreeze|EmptySnowPath|PolarBearRoom
