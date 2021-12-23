@@ -39,6 +39,7 @@ class MapTile:
 class StartingRoom(MapTile):
     # override the intro_text method in the superclass
     def intro_text(self):
+        sounds.startSound()
         return """
         You suddenly come across an old mansion while exploring the forest. 
         Despite previous warnings about the place, a curious traveler like yourself can not resist visiting this building.
@@ -95,6 +96,7 @@ class GiantSpiderRoom(EnemyRoom):
 
     def intro_text(self):
         if self.enemy.is_alive():
+            sounds.spiderSound()
             return """
             A giant spider jumps down from its web in front of you!
             """
@@ -247,6 +249,7 @@ class CrabRoom(EnemyRoom):
 
     def intro_text(self):
         if self.enemy.is_alive():
+            sounds.horror_night()
             return """
             Crab is attacking you!
             """
@@ -330,6 +333,7 @@ class RatHumanoidRoom(EnemyRoom):
 
     def intro_text(self):
         if self.enemy.is_alive():
+            sounds.wolfSound()
             return """
              A RatHumanoid is attacking you!
              """
@@ -345,6 +349,7 @@ class PenguinsRoom(EnemyRoom):
 
     def intro_text(self):
         if self.enemy.is_alive():
+            sounds.penguinSound()
             return """
              A Penguins is attacking you!
              """
@@ -399,6 +404,7 @@ class WolfRoom(EnemyRoom):
 
     def intro_text(self):
         if self.enemy.is_alive():
+            sounds.wolfSound()
             return """
              A wolf jumps down in front of you!
              """
